@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="style-menu_raphael-simonnet_noel-landry.css"/>
+    <title>QUICK CARE</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no"/>
+</head>
+
+<body>
+    <header>
+    <div class="firstbar">
+        <a href="">
+            <img src="qicon.png" alt="le logo" id="logo"  height="5%" width="5%">
+        </a>
+        <nav>
+            <!--navigation bar-->
+			<label for="burger-checkbox" class="burger">&#9776;</label>
+			<input type="checkbox" id="burger-checkbox"/>
+
+            <ul>
+                <li>
+                       <a href="index.html" class="bouton">Home</a>
+                </li>
+                <li>
+                       <a href="https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal" class="buuton">Contact</a>
+                </li>
+                <li>
+                       <a href="standard.html" class="bouton">Help</a>
+                </li>
+				<li>
+				       Partnership
+
+				</li>
+				
+            </ul>
+        </nav>
+    </div>
+    <div class="banniere">
+        <img src="banner.png" alt="la banniere" class="ban-img" height="50%" width="100%">
+        <div class="side-text">
+            <div>
+                <div>
+                    <h2></h2>
+                    <p style=" text-align:center" 
+						style= " font-size: 300%">
+						
+                         A network of more than 500000 experts turned towards innovation to answer all your needs. <b>Because we care.</b>
+                    </p>
+                    <button >Read more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	</header>
+
+    <section >
+        <!--first section-->
+        <div>
+            <div class="box-section" id="part1">
+			    <img src="heart.jpg" alt="heart logo"  height="20%" width="20%" >
+                <h3>
+                       Heart care
+                </h3>
+                <p>
+                       Know more about your heart rate
+                </p>
+            </div>
+            <div class="box-section" id="part2">
+                 <img src="drug.jpg" alt="drug logo"  height="25%" width="25%" >
+				 <h3>
+					Prescriptions 
+				 </h3>
+				 <p>
+					All about your drugs 
+				 </p>
+            </div>
+            <div class="box-section" id="part3">
+				<img src="diagnostic.jpg" alt="diagnostic logo"  height="20%" width="20%" >
+				<h3>
+					Diagnostic
+				 </h3>
+				 <p>
+					Get a quick diagnostic
+				 </p>
+            </div>
+            <div class="box-section" id="part4">
+				<img src="kit.jpg" alt="kit logo"  height="25%" width="25%" >
+				<h3>
+					Medical kit
+				 </h3>
+				 <p>
+				     Buy a medical kit 
+				 </p>
+            </div>
+        </div>
+    </section>
+
+    <section >
+	<div  background-color= "white">
+	
+        <!--section before footer-->
+        <h2>
+		Because medical results can save many lives, we offer the best services
+		</h2>
+        <p>
+		
+		</p>
+        <img src="family_happy.png" alt="happy family icon">
+        <p>
+		Since 1996, we offer the best councelling and assistance to more than 3 million families. Join us
+		</p>
+	</div>
+
+    </section>
+
+    <footer>
+	
+        <div>
+            <h3>
+
+            </h3>
+            <p>
+
+            </p>
+        </div>
+        <div>
+            <h3>
+
+            </h3>
+            <p>
+
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

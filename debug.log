@@ -1,0 +1,22 @@
+[0930/204419.226:ERROR:file_io.cc(89)] ReadExactly: expected 4928, observed 0
+[0930/204419.232:ERROR:crash_report_database_win.cc(445)] failed to read records
+[0930/204632.968:ERROR:file_io.cc(89)] ReadExactly: expected 4928, observed 0
+[0930/204632.970:ERROR:crash_report_database_win.cc(445)] failed to read records
+[0930/205633.021:ERROR:file_io.cc(89)] ReadExactly: expected 4928, observed 0
+[0930/205633.021:ERROR:crash_report_database_win.cc(445)] failed to read records
+[0930/205633.021:ERROR:file_io.cc(89)] ReadExactly: expected 4928, observed 0
+[0930/205633.021:ERROR:crash_report_database_win.cc(445)] failed to read records
+[0930/210132.978:ERROR:file_io.cc(89)] ReadExactly: expected 4928, observed 0
+[0930/210132.978:ERROR:crash_report_database_win.cc(445)] failed to read records
+[0930/211633.017:ERROR:file_io.cc(89)] ReadExactly: expected 4928, observed 0
+[0930/211633.017:ERROR:crash_report_database_win.cc(445)] failed to read records
+[0930/213133.067:ERROR:file_io.cc(89)] ReadExactly: expected 4928, observed 0
+[0930/213133.067:ERROR:crash_report_database_win.cc(445)] failed to read records
+[0930/214633.083:ERROR:file_io.cc(89)] ReadExactly: expected 4928, observed 0
+[0930/214633.083:ERROR:crash_report_database_win.cc(445)] failed to read records
+[0930/215846.991:ERROR:process_info.cc(359)] UncheckedAllocate
+[0930/215847.060:ERROR:file_io.cc(89)] ReadExactly: expected 4928, observed 0
+[0930/215847.060:ERROR:crash_report_database_win.cc(445)] failed to read records
+[1001/002710.820:ERROR:process_info.cc(359)] UncheckedAllocate
+[1001/002723.291:ERROR:winqual_utils.cc(53)] browser_crash_reporter.exe execution has fail: C:\Program Files (x86)\AVAST Software\Browser\Application\76.0.1632.101\browser_crash_reporter.exe  --send dumps --product 116 --version 76.0.1632.101 --path "C:\Users\Landry\AppData\Local\AVAST Software\Browser\User Data\Crashpad\Reports" --guid "ffb37420-2f3b-4296-8a5d-f60d845ed680" --filter "8c069db1-0255-4b8c-ae3e-a8cbdcc97531.dmp" --programpath "C:\Program Files (x86)\AVAST Software\Browser\Application\76.0.1632.101" --configpath "C:\Program Files (x86)\AVAST Software\Browser\Application\76.0.1632.101"
+[1022/120915.169:ERROR:crash_report_database_win.cc(428)] unexpected header

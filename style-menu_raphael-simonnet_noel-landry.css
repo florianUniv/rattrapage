@@ -1,0 +1,87 @@
+nav {
+    background-color: #fff;
+    overflow: hidden; 
+    position:absolute;
+	
+    right:0px;
+    top:0px;
+}
+nav ul {
+	margin:0;
+	padding:0;
+	display:block;
+	overflow: hidden;
+	background-color:#DCDCDC;
+	
+}
+nav a{
+	text-decoration:none;
+	color:black;
+	
+	}
+
+li a:hover:not(.active){background-color: #80DEEA;}
+
+li {
+	float: right;
+}
+
+nav li, nav .burger { /*Le code suivant s’appique au nav li ET au nav .burger*/
+    float:left; /*Permet de mettre plusieurs objets de type display-block sur la même ligne*/
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0px 0px;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+@media screen and (max-width: 600px) {
+	nav {
+		position:static;
+	}
+	nav .burger { /*Le burger button réapparait*/
+		display:block; 
+	
+	}
+	
+	nav li, nav .burger { /*chaque objet de type block prend une ligne entière*/
+		float:none;
+	}
+	nav ul {  /*Par défaut le ul n’apparait pas, il ne doit apparaitre que quand le checkbox est coché*/
+		display:none;
+	}
+	
+	nav #burger-checkbox:checked+ul { /*l’objet ul positionner juste apres un objet #burger-checkbox en état coché*/
+		display: block;
+	}
+
+}
+section { background-color :#E0F7FA ;
+		  text-align: center;
+		  padding: 0px;
+		  margin: 0px;
+}
+div { /*background-color :DarkTurquoise ;*/
+		  text-align: center;
+		  padding: 0;
+		  margin: 0;
+}
+
+.footer_st {
+	background-color : gray;
+		  text-align: center;
+		  padding: 0;
+		  margin: 0;
+}
+
+footer { 
+background-color: gray;
+color: white;
+clear: both;
+text-align: center;
+padding: 0px
+margin: 0px;
+
+}
