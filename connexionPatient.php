@@ -12,11 +12,9 @@
 
     <link rel="stylesheet" href="style.css" type="text/css">
 	<link rel="stylesheet" type="text/css" href="style-menu_raphael-simonnet_noel-landry.css"/>
-    <title>Table patients</title>
+    <title>Connexion patient</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no"/>
 </head>
-
-
 
 <body>
 	
@@ -39,19 +37,11 @@
         ?>
 -->
 
-	<center><h4 style="background-color: #FCE4EC"><p> Identifier vous pour voir vos informations de santé</p></h4></center>
+	<center><h4 style="background-color: #FCE4EC"><p> Connectez-vous pour voir vos informations de santé</p></h4></center>
 
 
-	 <form  method = "POST"  action="login.php" style="margin: 0 auto 0 auto; width: 800px">
-  <div class="form-group">
-    <label for="Nom">Votre nom:</label>
-    <input type="text" class="form-control" name= "Nom" id="Nom">
-  </div>
-  <div class="form-group">
-    <label for="Prenom">Votre prenom:</label>
-    <input type="text" class="form-control" name= "Prenom" id="Prenom">
-  </div>
-
+	 <form  method = "POST"  action="verificationConnexionPatient.php" style="margin: 0 auto 0 auto; width: 800px">
+  
   <div class="form-group">
     <label for="Email">Votre Email:</label>
     <input type="email" class="form-control" id="Email" name= "Email">
@@ -62,8 +52,6 @@
     <input type="password" class="form-control" id="Password" name="Password">
   </div>
 
-
-
   <div class="form-group form-check">
     <label class="form-check-label">
       <input class="form-check-input" type="checkbox"> Remember me
@@ -71,51 +59,6 @@
   </div>
   <button type="submit" value= "envoyer" class="btn btn-primary">Submit</button>
 </form> 
-
-
-<table class="table">
-    <thead>
-      <tr>
-        <th>Nom</th>
-        <th>Prenom</th>
-        <th>Email</th>
-		<th>Mot de passe</th>
-      </tr>
-    </thead>
-    
-      <tr>
-        <td>NJILLA NJONKEP</td>
-        <td>Noel landry</td>
-        <td>nnjonkep@gmail.com</td>
-		<td>innovation</td>
-      </tr>
-      <tr>
-        <td>NTSAGUIM NGUIMEZAP</td>
-        <td>Cindy Carelle</td>
-        <td>cindycarelle@yncrea.fr</td>
-		<td>mabellemarainne</td>
-      </tr>
-      <tr>
-        <td>WAMBO PIAME</td>
-        <td>Yvan-hermann</td>
-        <td>wamboyvan@gmail.com</td>
-		<td>lepiams</td>
-      </tr>
-	   <tr>
-        <td>NEDEYE KHADY</td>
-        <td>Diouf</td>
-        <td>nkdiouf@icloud.cOM</td>
-		<td>llabosseuse</td>
-      </tr>
-	   <tr>
-        <td>Rafa</td>
-        <td>SIM</td>
-        <td>rafasim@hotmail.fr</td>
-		<td>toto</td>
-      </tr>
-    
-  </table>
-
 
 
 </body>

@@ -46,7 +46,7 @@ INSERT INTO `medecin` (`id`, `Nom`, `Prenom`, `Email`, `Password`) VALUES
 -- --------------------------------------------------------
 
 --
-Structure de la table `patient`
+-- Structure de la table `patient`
 --
 
 CREATE TABLE `patient` (
@@ -56,7 +56,7 @@ CREATE TABLE `patient` (
   `Email` varchar(256) NOT NULL,
   `Password` varchar(256) NOT NULL,
   `NumeroSecu` bigint(15) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `patient`

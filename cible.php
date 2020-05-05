@@ -1,7 +1,7 @@
 <?php
 //////////////////////// ouverture de la connexion////////////////
-function connect_bd()
-//{
+/*function connect_bd()
+{
 	$nombd = 'patient';
 	$login = 'root';
 	$bd = new PDO($nomserveur,$login) or die ("connexion echouee");
@@ -35,5 +35,5 @@ if($bd<>0)
     }
     deconnect_bd($bd);
 } 
-
+*/
 ?>
