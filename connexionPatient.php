@@ -57,7 +57,7 @@
       <input class="form-check-input" type="checkbox"> Remember me
     </label>
   </div>
-  <button type="submit" value= "envoyer" class="btn btn-primary">Submit</button>
+  <button type="submit" value= "envoyer" class="btn btn-primary">Connexion</button>
 </form> 
 
 
