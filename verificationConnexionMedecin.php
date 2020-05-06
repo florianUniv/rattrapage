@@ -10,7 +10,7 @@
     
 
     //  Récupération de l'utilisateur et de son pass 
-    $req = $bdd->prepare('SELECT id, Password from patient WHERE Email = :email');
+    $req = $bdd->prepare('SELECT id, Password from medecin WHERE Email = :email');
     $req->execute (array(
         'email' => $_POST['Email']));
     $resultat = $req->fetch();
@@ -18,7 +18,7 @@
     //Vérification mot de passe
     if (!$resultat){
         $_SESSION['erreurLogin'] ="Mauvais identifiant ou mot de passe !";
-        header("location:connexionPatient.php?Authentification=Error");
+        header("location:connexionMedecin.php?Authentification=Error");
         die();
     }
     else{
@@ -28,12 +28,12 @@
             $_SESSION['id'] = $resultat['id'];
             //$_SESSION['pseudo'] = $pseudo;
             //echo "bienvenue";
-            header("location:resultatPatient.php");
+            header("location:medecin.php");
             die();
         }
         else {
             $_SESSION['erreurLogin'] ="Mauvais identifiant ou mot de passe !"; 
-            header("location:connexionPatient.php?Authentification=Error");
+            header("location:connexionMedecin.php?Authentification=Error");
             die();
         }
     }

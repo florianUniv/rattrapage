@@ -3,80 +3,55 @@
 
 <?php include("head.php") ?>
 
-
-
 <body>
-  
+
   <header>
     <?php include("nav.php"); ?>
     <h1>Résultat Patient </h1>
     </br>
   </header>
 
-	<!--<?php
-            session_start();
-            if(isset($_POST["login"])) {
-                if($_POST["login"]=="toto" && $_POST["password"]=="123") {
-                    $_SESSION['id']=1;
-                    $_SESSION['compte']='patient';
-                    header('Location:data_patient.php');
-                }
-                else { ?>
-                        <div class="alert alert-danger" role="alert">
-                          Login ou mot de passe incorrect.
-                        </div>
-                    <?php
-                }
-            }
-        ?>
--->
+  <?php
+    session_start();
+    if (!isset($_SESSION['id'])){
+      header("location: connexionPatient.php");
+      die();
+    }
 
+    //récupération data patient
+    try{
+      $bdd = new PDO('mysql:host=localhost;dbname=bd1;charset=utf8', 'root', '');
+      $bdd;
+    }
+    catch (Exception $e){
+      die('Erreur : ' . $e->getMessage());
+    }
 
+    $req = $bdd->prepare('SELECT Nom, Prenom, Email, NumeroSecu from patient WHERE id = :id');
+    $req->execute (array(
+        'id' => $_SESSION['id']));
+    $resultat = $req->fetch();
+  ?>
 
-<table class="table">
+  <table class="table">
     <thead>
       <tr>
         <th>Nom</th>
         <th>Prenom</th>
         <th>Email</th>
-		<th>Mot de passe</th>
+		    <th>N° de sécurité sociale</th>
       </tr>
     </thead>
     
       <tr>
-        <td>NJILLA NJONKEP</td>
-        <td>Noel landry</td>
-        <td>nnjonkep@gmail.com</td>
-		<td>innovation</td>
+        <td><?php echo $resultat['Nom']; ?></td>
+        <td><?php echo $resultat['Prenom']; ?></td>
+        <td><?php echo $resultat['Email']; ?></td>
+		    <td><?php echo $resultat['NumeroSecu']; ?></td>
       </tr>
-      <tr>
-        <td>NTSAGUIM NGUIMEZAP</td>
-        <td>Cindy Carelle</td>
-        <td>cindycarelle@yncrea.fr</td>
-		<td>mabellemarainne</td>
-      </tr>
-      <tr>
-        <td>WAMBO PIAME</td>
-        <td>Yvan-hermann</td>
-        <td>wamboyvan@gmail.com</td>
-		<td>lepiams</td>
-      </tr>
-	   <tr>
-        <td>NEDEYE KHADY</td>
-        <td>Diouf</td>
-        <td>nkdiouf@icloud.cOM</td>
-		<td>llabosseuse</td>
-      </tr>
-	   <tr>
-        <td>Rafa</td>
-        <td>SIM</td>
-        <td>rafasim@hotmail.fr</td>
-		<td>toto</td>
-      </tr>
-    
   </table>
 
-    <?php include("footer.php"); ?>
+  <?php include("footer.php"); ?>
 
   </body>
 </html>

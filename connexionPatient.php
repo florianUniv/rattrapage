@@ -1,20 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="style.css" type="text/css">
-	<link rel="stylesheet" type="text/css" href="style-menu_raphael-simonnet_noel-landry.css"/>
-    <title>Connexion patient</title>
-	<meta name="viewport" content="width=device-width, user-scalable=no"/>
-</head>
+<?php include("head.php") ?>
 
 <body>
 	
@@ -37,8 +24,12 @@
         ?>
 -->
 
+
 	<center><h4 style="background-color: #FCE4EC"><p> Connectez-vous pour voir vos informations de santé</p></h4></center>
 
+  
+  <?php if (isset($_GET["Authentification"]) && $_GET["Authentification"]=="Error") echo '<div class="alert alert-danger" role="alert">' . 'Identifiant ou mot de passe incorrect'. '</div>'; ?>
+  
 
 	 <form  method = "POST"  action="verificationConnexionPatient.php" style="margin: 0 auto 0 auto; width: 800px">
   
