@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include("head.php"); ?>
+<?php
+session_start();
+include "head.php";
+?>
 
 <body>
   <header>
-    
-    <?php include("nav.php"); ?>
+
+    <?php include "nav.php"; ?>
 
     <div class="banniere">
       <img src="images/banner.png" alt="la banniere" class="ban-img" height="200%" width="100%">
@@ -87,8 +90,8 @@
 
   </section>
 
-    <?php include("footer.php"); ?>
-  
+  <?php include "footer.php"; ?>
+
 </body>
 
 </html>
