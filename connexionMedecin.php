@@ -5,6 +5,10 @@
 
 <body>
 
+    <header>
+        <?php include("nav.php"); ?>
+    </header>
+
     <center>
         <h4 style="background-color: #FCE4EC">
             <p> Identifier vous pour accéder à l'espace Médecin </p>
@@ -37,5 +41,10 @@
         <button type="submit" value="envoyer" class="btn btn-primary">Connexion</button>
 
     </form>
+
+    <!--Pour ajouter un espace avant le footer-->
+    <div id="blank"></div>
+  
+    <?php include("footer.php"); ?>
 
 </body>

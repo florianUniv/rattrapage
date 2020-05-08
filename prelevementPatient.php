@@ -24,13 +24,10 @@
     <?php
         
         //récupération prélèvements patient
-        try{
-            $bdd = new PDO('mysql:host=localhost;dbname=bd1;charset=utf8', 'root', '');
-            $bdd;
-        }
-        catch (Exception $e){
-            die('Erreur : ' . $e->getMessage());
-        }
+        
+        // Connexion à la BD
+        include_once("connexionBD.php");
+        $bdd = connexionBD();
 
         $req = $bdd->prepare('SELECT m.Nom, m.Email, pr.Date, pr.RésultatAnalyse from medecin As m, prélèvement AS pr
         WHERE pr.idMedecin=m.id and pr.idPatient = :id');
@@ -63,6 +60,9 @@
     ?>
 
     </table>
+
+    <!--Pour ajouter un espace avant le footer-->
+    <div id="blank"></div>
 
     <?php include("footer.php"); ?>
 

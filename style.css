@@ -1,10 +1,11 @@
 body {
+    
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, 
+    lvetica, sans-serif;
+    
 }
-
-
 
 .first-bar {
     max-width: 1200px;
@@ -44,7 +45,6 @@ body {
 .box-section {
     display: inline-block;
     max-width: 300px;
-    /*                                padding-left: 85px;*/
     background: no-repeat;
     margin: 40px 10px;
 }
@@ -54,4 +54,3 @@ body {
 		display:none;
 	}
 }
-

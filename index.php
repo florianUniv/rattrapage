@@ -12,7 +12,7 @@ include "head.php";
     <?php include "nav.php"; ?>
 
     <div class="banniere">
-      <img src="images/banner.png" alt="la banniere" class="ban-img" height="200%" width="100%">
+      <img src="images/banner.png" alt="la banniere" class="ban-img" height="100%" width="100%">
       <div class="side-text">
         <div>
           <div style="background-color: none;">
@@ -90,7 +90,7 @@ include "head.php";
 
   </section>
 
-  <?php include "footer.php"; ?>
+  <?php include("footer.php"); ?>
 
 </body>
 

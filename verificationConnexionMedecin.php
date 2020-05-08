@@ -1,12 +1,8 @@
 <?php
 
-try {
-    $bdd = new PDO('mysql:host=localhost;dbname=bd1;charset=utf8', 'root', '');
-    $bdd;
-} catch (Exception $e) {
-    die('Erreur : ' . $e->getMessage());
-}
-
+// Connexion à la BD
+include_once("connexionBD.php");
+$bdd = connexionBD();
 
 //  Récupération de l'utilisateur et de son pass 
 $req = $bdd->prepare('SELECT id, Password from medecin WHERE Email = :email');

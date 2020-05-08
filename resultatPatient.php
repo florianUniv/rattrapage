@@ -24,12 +24,10 @@ include "head.php"
   <?php
 
   //récupération data patient
-  try {
-    $bdd = new PDO('mysql:host=localhost;dbname=bd1;charset=utf8', 'root', '');
-    $bdd;
-  } catch (Exception $e) {
-    die('Erreur : ' . $e->getMessage());
-  }
+  
+  // Connexion à la BD
+  include_once("connexionBD.php");
+  $bdd = connexionBD();
 
   $req = $bdd->prepare('SELECT Nom, Prenom, Email, NumeroSecu from patient WHERE id = :id');
   $req->execute(array(
@@ -56,7 +54,10 @@ include "head.php"
     </tr>
   </table>
 
-  <a href="prelevementPatient.php" class="bouton">Accéder à mes prélèvements</a>
+  <a href="prelevementPatient.php" class="btn btn-primary">Accéder à mes prélèvements</a>
+
+  <!--Pour ajouter un espace avant le footer-->
+  <div id="blank"></div>
 
   <?php include "footer.php"; ?>
 

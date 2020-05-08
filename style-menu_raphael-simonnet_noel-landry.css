@@ -1,11 +1,4 @@
-nav {
-    background-color: #fff;
-    overflow: hidden; 
-    position:absolute;
-	
-    right:0px;
-    top:0px;
-}
+
 nav ul {
 	margin:0;
 	padding:0;
@@ -22,9 +15,6 @@ nav a{
 
 li a:hover:not(.active){background-color: #80DEEA;}
 
-li {
-	float: right;
-}
 
 nav li, nav .burger { /*Le code suivant s’appique au nav li ET au nav .burger*/
     float:left; /*Permet de mettre plusieurs objets de type display-block sur la même ligne*/
@@ -63,8 +53,7 @@ section { background-color :#E0F7FA ;
 		  padding: 0px;
 		  margin: 0px;
 }
-div { /*background-color :DarkTurquoise ;*/
-		  text-align: center;
+div { 
 		  padding: 0;
 		  margin: 0;
 }
@@ -81,7 +70,15 @@ background-color: gray;
 color: white;
 clear: both;
 text-align: center;
-padding: 0px
-margin: 0px;
 
+/* pour fixer le footer en bas */
+position: absolute;
+width: 100%;
+margin : 0;
+padding: 0;
+}
+
+div#blank {
+	height:150px;
+	
 }
